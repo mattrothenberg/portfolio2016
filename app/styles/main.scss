@@ -3,6 +3,7 @@ $green: #16A085;
 $ancillary: #E74C3C;
 $gray: #222222;
 $light-gray: lighten($gray, 25%);
+$lighter-gray: lighten($gray, 45%);
 $border-gray: lighten($gray, 75%);
 
 // Overrides
@@ -40,7 +41,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
-    right: 5px;
+    width: 85px;
 
     svg {
       height: 100%;
@@ -57,10 +58,25 @@ body {
     border: 0;
     border-radius: 0;
     padding: 1em 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid $border-gray;
+  }
+
+  .navbar-nav li.active a {
+    color: $gray;
   }
 
   .navbar-nav li a {
     background: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $lighter-gray;
+    @include transition(all, .2s, ease-in-out);
+
+    &:hover {
+      color: $gray;
+    }
+
   }
 
   .navbar-brand {
@@ -74,6 +90,10 @@ body {
 
   @media(min-width: $screen-sm-min) {
 
+    .navbar {
+      border: 0;
+    }
+
     .navbar-header {
       padding: 0;
     }
@@ -81,8 +101,20 @@ body {
     .navbar-brand {
       height: 75px;
     }
+
+    .navbar-nav li a {
+      line-height: 75px;
+    }
   }
 
+}
+
+.main {
+  padding-top: 1em;
+
+  @media(min-width: $screen-sm-min) {
+    padding-top: 120px;
+  }
 }
 
 .asterisk {
@@ -91,6 +123,10 @@ body {
 
 .about-me {
   border-bottom: 1px solid $border-gray;
+}
+
+.lead {
+  margin-bottom: 1em;
 }
 
 .footnote {

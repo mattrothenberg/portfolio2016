@@ -25,7 +25,7 @@
         <div class="container">
           <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed">
               <ng-include src="'../images/hamburger.svg'"></ng-include>
             </button>
 
@@ -46,9 +46,9 @@
       </div>
     </div>
 
-    <div class="container">
-    <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-    </div>
+    <section class="container main">
+      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    </section>
 
     <div class="footer">
       <div class="container">

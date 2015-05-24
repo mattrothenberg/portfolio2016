@@ -1,10 +1,39 @@
+// Variables!
+$green: #16A085;
+$ancillary: #E74C3C;
+$gray: #222222;
+$light-gray: lighten($gray, 25%);
+$border-gray: lighten($gray, 75%);
+
+// Overrides
+$font-size-base: 20px !default;
+$brand-primary: $green !default;
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// Custom Stuff!
 @import "typography";
 
 body {
   font-family: "Circular";
+  font-weight: normal;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.asterisk {
+  color: $ancillary;
+}
+
+.about-me {
+  border-bottom: 1px solid $border-gray;
+}
+
+.footnote {
+  padding-top: 20px;
+  color: $light-gray;
 }

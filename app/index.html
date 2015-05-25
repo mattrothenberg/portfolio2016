@@ -15,6 +15,12 @@
     <!-- endbuild -->
   </head>
   <body ng-app="mattportfolioApp">
+
+    <div class="frame top"></div>
+    <div class="frame right"></div> 
+    <div class="frame bottom"></div>
+    <div class="frame left"></div>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,9 +38,9 @@
 
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a ng-href="#/about">About</a></li>
-            <li><a ng-href="#/resume">Resume</a></li>
-            <li><a ng-href="#/work">Work</a></li>
+            <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+            <li ui-sref-active="active"><a ui-sref="resume">Resume</a></li>
+            <li ui-sref-active="active"><a ui-sref="work">Work</a></li>
           </ul>
 
         </div>
@@ -42,7 +48,7 @@
     </div>
 
     <section class="container main">
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+      <div class="animation-target" ui-view></div>
     </section>
 
     <div class="footer">

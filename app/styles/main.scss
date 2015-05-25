@@ -6,6 +6,7 @@ $gray-alt: lighten(#333333, 10%);
 $light-gray: lighten($gray, 25%);
 $lighter-gray: lighten($gray, 45%);
 $border-gray: lighten($gray, 75%);
+$frame-gray: lighten ($gray, 78%);
 
 // Overrides
 $font-size-base: 20px !default;
@@ -21,6 +22,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // Custom Stuff!
 @import "typography";
+@import "animations";
+@import "resume";
 
 body {
   font-family: "Circular";
@@ -28,6 +31,55 @@ body {
   color: #222222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media(min-width: $screen-sm-min) {
+    padding: 1em 0;
+  }
+
+}
+
+.frame {
+  background: $border-gray;
+  position: fixed;
+  display: none;
+
+  @media(min-width: $screen-sm-min) {
+    display: block;
+  }
+
+  &.top, &.bottom {
+    width: 100%;
+    height: 10px;  
+  }
+
+  &.right, &.left {
+    width: 10px;
+    height: 100%;
+  }
+
+  &.top {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &.right {
+    right: 0;
+    bottom: 0;
+  }
+
+  &.left {
+    left: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
 }
 
 // Header Stuff 
@@ -150,7 +202,9 @@ body {
   padding-top: 1em;
 
   @media(min-width: $screen-sm-min) {
-    padding-top: 120px;
+    .home {
+      padding-top: 100px;
+    }
   }
 
   a {

@@ -2,6 +2,7 @@
 $green: #16A085;
 $ancillary: #E74C3C;
 $gray: #222222;
+$gray-alt: lighten(#333333, 10%);
 $light-gray: lighten($gray, 25%);
 $lighter-gray: lighten($gray, 45%);
 $border-gray: lighten($gray, 75%);
@@ -31,24 +32,28 @@ body {
 
 // Header Stuff 
 .header {
+  text-align: center;
+
 
   .navbar-header {
     padding: 0 15px;
   }
 
   .navbar-toggle {
-    height: 50px;
+    height: 55px;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
     width: 85px;
+    right: 10px;
+    top: 2px;
 
     svg {
       height: 100%;
 
       path {
-        fill: $gray;
+        fill: $gray-alt;
       }
 
     }
@@ -58,9 +63,19 @@ body {
     background: none;
     border: 0;
     border-radius: 0;
-    padding: 1em 0;
+    padding: .75em 0 0;
     margin-bottom: 0;
     border-bottom: 1px solid $border-gray;
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    width: auto;
+  }
+
+  .navbar-nav li {
+    display: inline-block;
+    float: left;
   }
 
   .navbar-nav li.active a {
@@ -73,6 +88,7 @@ body {
     padding-bottom: 0;
     color: $lighter-gray;
     @include transition(all, .2s, ease-in-out);
+    font-size: .80em;
 
     &:hover {
       color: $gray;
@@ -82,17 +98,36 @@ body {
 
   .navbar-brand {
     padding: 0;
+    height: 60px;
+    float: none;
+    display: inline-block;
 
     svg {
       height: 100%;
       width: auto;
+
+      circle {
+        fill: $gray-alt;
+        @include transition(all, .2s, ease-in-out);
+      }
+    }
+
+    &:hover {
+      svg {
+        circle {
+          fill: $green;
+        }
+      }
     }
   }
 
+
   @media(min-width: $screen-sm-min) {
+    text-align: left;
 
     .navbar {
       border: 0;
+      padding: 1em 0;
     }
 
     .navbar-header {
@@ -100,11 +135,12 @@ body {
     }
 
     .navbar-brand {
-      height: 75px;
+      height: 85px;
     }
 
     .navbar-nav li a {
       line-height: 75px;
+      font-size: 1em;
     }
   }
 

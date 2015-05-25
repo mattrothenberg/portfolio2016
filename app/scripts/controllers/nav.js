@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name mattportfolioApp.controller:MainCtrl
+ * @name mattportfolioApp.controller:NavCtrl
  * @description
- * # MainCtrl
+ * # NavCtrl
  * Controller of the mattportfolioApp
  */
 angular.module('mattportfolioApp')
-  .controller('MainCtrl', function () {
+  .controller('NavCtrl', function () {
   });

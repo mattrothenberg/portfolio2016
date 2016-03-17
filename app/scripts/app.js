@@ -27,7 +27,12 @@ angular
     $stateProvider
       .state('about', {
         url: '/about',
-        templateUrl: 'views/main.html'
+        templateUrl: 'views/main.html',
+        resolve: {
+          title: function() {
+            return 'Foo'
+          }
+        }
       })
       .state('resume', {
         url: '/resume',

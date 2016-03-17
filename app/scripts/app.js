@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'angularLazyImg'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     //
@@ -31,5 +32,28 @@ angular
       .state('resume', {
         url: '/resume',
         templateUrl: 'views/resume.html'
-      });
+      })
+
+      .state('work', {
+        url: '/work',
+        templateUrl: 'views/work.html'
+      })
+
+      .state('work.development', {
+        url: '/development',
+        views: {
+          'type': {
+            templateUrl: 'views/work-development.html'
+          }
+        }
+      })
+
+      .state('work.design', {
+        url: '/design',
+        views: {
+          'type': {
+            templateUrl: 'views/work-design.html'
+          }
+        }
+      })
   });

@@ -31,8 +31,8 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/ui-router/release/angular-ui-router.js',
-      'bower_components/photoswipe/dist/photoswipe.js',
-      'bower_components/photoswipe/dist/photoswipe-ui-default.js',
+      'bower_components/bLazy/blazy.js',
+      'bower_components/angular-lazy-img/release/angular-lazy-img.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

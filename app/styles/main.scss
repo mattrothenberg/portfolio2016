@@ -25,10 +25,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "animations";
 @import "resume";
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Circular";
   font-weight: normal;
   color: #222222;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -49,7 +54,7 @@ body {
 
   &.top, &.bottom {
     width: 100%;
-    height: 10px;  
+    height: 10px;
   }
 
   &.right, &.left {
@@ -82,33 +87,13 @@ body {
 
 }
 
-// Header Stuff 
+// Header Stuff
 .header {
   text-align: center;
 
 
   .navbar-header {
     padding: 0 15px;
-  }
-
-  .navbar-toggle {
-    height: 55px;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
-    width: 85px;
-    right: 10px;
-    top: 2px;
-
-    svg {
-      height: 100%;
-
-      path {
-        fill: $gray-alt;
-      }
-
-    }
   }
 
   .navbar {
@@ -150,9 +135,10 @@ body {
 
   .navbar-brand {
     padding: 0;
-    height: 60px;
+    height: 75px;
     float: none;
     display: inline-block;
+    @extend .animate-target;
 
     svg {
       height: 100%;
@@ -187,11 +173,11 @@ body {
     }
 
     .navbar-brand {
-      height: 85px;
+      height: 115px;
     }
 
     .navbar-nav li a {
-      line-height: 75px;
+      line-height: 122px;
       font-size: 1em;
     }
   }
@@ -200,14 +186,17 @@ body {
 
 .main {
   padding-top: 1em;
+  min-height: calc(100% - 200px);
 
   @media(min-width: $screen-sm-min) {
+    padding-bottom: 25px;
+
     .home {
-      padding-top: 100px;
+      padding-top: 75px;
     }
   }
 
-  a {
+  .fancy-link {
     @include fancyUnderline($green, #FFFFFF);
     @include transition(all, .2s, ease-in-out);
 
@@ -233,4 +222,188 @@ body {
 .footnote {
   padding-top: 20px;
   color: $light-gray;
+}
+
+footer {
+  @media(min-width: $screen-sm-min) {
+    padding: 0 0 35px 0;
+  }
+}
+
+.social-links {
+  text-align: center;
+
+  li a {
+    color: $lighter-gray;
+    font-size: .90em;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.work-stage {
+  @media(min-width: $screen-sm-min) {
+    display: table;
+    min-height: 450px;
+    height: 100%;
+  }
+}
+
+.work-navigation {
+  padding: 0 0 15px 0;
+  text-align: center;
+  margin: 0 0 1em;
+
+  a {
+    display: inline-block;
+    cursor: pointer;
+    color: $lighter-gray;
+    width: auto;
+    margin: 0 1em 0 0;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+
+    @media(min-width: $screen-sm-min) {
+      display: block;
+      margin: 0 0 1em 0;
+      width: 100%;
+    }
+
+    &:hover {
+      color: $gray;
+    }
+
+    &.active {
+      color: $gray;
+      box-shadow: inset 0 -3px 0 0 $green;
+
+      @media(min-width: $screen-sm-min) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  @media(min-width: $screen-sm-min) {
+    margin: 0;
+    text-align: left;
+    display: table-cell;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    padding-bottom: 0;
+    padding-right: 25px;
+    border-right: 1px solid $border-gray;
+  }
+}
+
+.work-content {
+  @media(min-width: $screen-sm-min) {
+    display: table-cell;
+    width: 75%;
+    height: 100%;
+    vertical-align: top;
+    padding: 0 0 0 50px;
+  }
+}
+
+.dev-work-list {
+  @extend .list-unstyled;
+
+  li {
+    margin-bottom: 1.25em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .work-title {
+    display: block;
+    @extend .clearfix;
+  }
+
+  h1 {
+    @extend .pull-left;
+    margin-top: 0;
+    transition: color .2s ease-in-out;
+  }
+
+  span {
+    @extend .pull-right;
+    opacity: 0;
+    font-size: .80em;
+    text-transform: uppercase;
+    letter-spacing: .5pt;
+    color: lighten($lighter-gray, 5%);
+    transition: opacity .2s ease-in-out;
+  }
+
+  hr {
+    margin: 5px 0 10px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+
+      h1 {
+        color: $green;
+      }
+
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.dot-list {
+  @extend .list-inline;
+  font-size: .85em;
+
+  li {
+    padding-right: 1em;
+    color: lighten($lighter-gray, 8%);
+
+    &:after {
+      content: '\00B7';
+      left: 8px;
+      position: relative;
+      font-size: 1.5em;
+      top: 2px;
+      color: lighten($lighter-gray, 8%);
+    }
+
+    &:last-of-type {
+      &:after {
+        content: '';
+      }
+    }
+  }
+}
+
+ul.dot-list li:last-of-type:after {
+    content: ''
+}
+
+.work-design {
+  padding-bottom: 25px;
+
+  img {
+    margin-bottom: 25px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

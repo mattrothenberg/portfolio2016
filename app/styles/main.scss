@@ -47,6 +47,7 @@ body {
   background: $border-gray;
   position: fixed;
   display: none;
+  z-index: 9999;
 
   @media(min-width: $screen-sm-min) {
     display: block;
@@ -334,7 +335,7 @@ footer {
   span {
     @extend .pull-right;
     opacity: 0;
-    font-size: .80em;
+    font-size: .70em;
     text-transform: uppercase;
     letter-spacing: .5pt;
     color: lighten($lighter-gray, 5%);

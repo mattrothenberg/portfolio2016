@@ -135,15 +135,22 @@ body {
   }
 
   .navbar-brand {
+    float: none;
     padding: 0;
     height: 75px;
-    float: none;
     display: inline-block;
     @extend .animate-target;
+
+    &:active {
+      svg {
+        transform: scale3d(.85, .85, .85);
+      }
+    }
 
     svg {
       height: 100%;
       width: auto;
+      transition: all .5s cubic-bezier(.17,.67,.83,.67);
 
       circle {
         fill: $gray-alt;

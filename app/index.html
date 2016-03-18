@@ -45,7 +45,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li ui-sref-active="active"><a ui-sref="about">About</a></li>
             <li ui-sref-active="active"><a ui-sref="resume">Resume</a></li>
-            <li ui-sref-active="active"><a ui-sref="work.development">Work</a></li>
+            <li ng-class="isSubPage ? 'active' : ''"><a ui-sref="work.development">Work</a></li>
           </ul>
 
         </div>

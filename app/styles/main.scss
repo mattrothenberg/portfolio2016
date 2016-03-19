@@ -213,6 +213,10 @@ body {
     color: darken($green, 10%);
     text-decoration: none;
   }
+
+  &:visited, &:focus, &:active {
+    text-decoration: none;
+  }
 }
 .asterisk {
   color: $ancillary;

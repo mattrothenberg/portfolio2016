@@ -256,6 +256,7 @@ footer {
     display: table;
     min-height: 450px;
     height: 100%;
+    border-top: 1px solid $border-gray;
   }
 }
 
@@ -300,8 +301,7 @@ footer {
     width: 25%;
     height: 100%;
     vertical-align: top;
-    padding-bottom: 0;
-    padding-right: 25px;
+    padding: 35px 25px 0 0;
     border-right: 1px solid $border-gray;
   }
 }
@@ -312,7 +312,7 @@ footer {
     width: 75%;
     height: 100%;
     vertical-align: top;
-    padding: 0 0 0 50px;
+    padding: 35px 0 0 50px;
   }
 }
 

@@ -418,3 +418,9 @@ ul.dot-list li:last-of-type:after {
     }
   }
 }
+
+.alert {
+  background: rgba($green, .25);
+  font-size: .85em;
+  color: darken($green, 15%);
+}

@@ -274,7 +274,8 @@ footer {
     cursor: pointer;
     color: $lighter-gray;
     width: auto;
-    margin: 0 1em 0 0;
+    margin: 0 .25em 0 0;
+    font-size: .85em;
     text-decoration: none;
     transition: color .2s ease-in-out;
 
@@ -282,6 +283,7 @@ footer {
       display: block;
       margin: 0 0 1em 0;
       width: 100%;
+      font-size: 1em;
     }
 
     &:hover {

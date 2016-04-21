@@ -53,6 +53,15 @@ angular
         }
       })
 
+      .state('work.product', {
+        url: '/product',
+        views: {
+          'type': {
+            templateUrl: 'views/work-product.html'
+          }
+        }
+      })
+
       .state('work.design', {
         url: '/design',
         views: {

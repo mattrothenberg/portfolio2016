@@ -18,5 +18,12 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "mattportfolioApp"
+  "moduleName": "mattportfolioApp",
+  "overrides": {
+    "bootstrap-sass-official": {
+      "main": [
+        "./assets/stylesheets/_bootstrap.scss"
+      ]
+    }
+  }
 }

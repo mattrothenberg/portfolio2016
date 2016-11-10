@@ -1,0 +1,12 @@
+@charset 'utf-8';
+@import 'ace';
+@import 'mixins';
+@import 'normalize';
+
+// $font-family-fallback: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+body {
+  @include smooth-type;
+  color: #373737;
+  // font-family: 'Space Mono', $font-family-fallback;
+}

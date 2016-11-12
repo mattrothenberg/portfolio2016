@@ -8,9 +8,18 @@ $font-family-fallback: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $screen-sm: 40em;
 $screen-md: 52em;
 $pink: #ffa2a2;
+$white: #fff;
 
 .rubik {
   font-family: 'Rubik', $font-family-fallback;
+}
+
+.subdued {
+  opacity: .25;
+}
+
+.medium {
+  font-weight: 50;;
 }
 
 h1,
@@ -20,6 +29,7 @@ h4,
 h5,
 h6 {
   @extend .rubik;
+  font-weight: 500;
 }
 
 a {
@@ -27,9 +37,11 @@ a {
 }
 
 nav a {
-  @extend .white;
-  @extend .muted;
-
+  color: $white;
+  opacity: .5;
+  transition: color .2s ease-out, opacity .2s ease-out;
+  
+  &:hover,
   &.active {
     opacity: 1;
     color: $pink;
@@ -57,6 +69,11 @@ body {
   }
 }
 
-.caps {
-  letter-spacing: 2pt;
+.asterisked {
+  &:before {
+    content: '*';
+    position: absolute;
+    left: -12px;
+    top: 0;
+  }
 }

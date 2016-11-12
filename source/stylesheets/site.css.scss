@@ -40,6 +40,14 @@ a {
   color: $pink;
 }
 
+.default-link {
+  transition: color .2s ease-out;
+
+  &:hover {
+    color: lighten($pink, 3%);
+  }
+}
+
 nav a {
   color: $white;
   opacity: .5;
@@ -93,4 +101,44 @@ body {
 
 .pen {
   pointer-events: none;
+}
+
+.arrow-link-title{
+  position: relative;
+
+  &:after {
+    background-image: url('../images/arrow-right.svg');
+    background-position: center center;
+    background-size: cover;
+    color: $white;
+    content: '';
+    display: inline-block;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .2s ease-out;
+    width: 20px;
+  }
+}
+
+.arrow-link:hover,
+.arrow-link:focus {
+
+  .arrow-link-title:after {
+    opacity: .75;
+    right: -30px;
+  }
+}
+
+.gallery-button {
+  backface-visibility: hidden;
+  transition: background .2s ease-out, border .2s ease-out, transform .2s ease-out;
+
+  &:hover {
+    background: rgba($pink, .025);
+    border-color: $pink;
+    transform: translateY(-5px);
+  }
 }

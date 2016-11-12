@@ -4,12 +4,49 @@
 @import 'normalize';
 @import 'pswp';
 
-// $font-family-fallback: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$font-family-fallback: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $screen-sm: 40em;
 $screen-md: 52em;
+$pink: #ffa2a2;
+
+.rubik {
+  font-family: 'Rubik', $font-family-fallback;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .rubik;
+}
+
+a {
+  color: $pink;
+}
+
+.pink {
+  color: $pink;
+}
+
+.blue {
+  color: #b7c1ce;
+}
 
 body {
   @include smooth-type;
-  color: #373737;
-  // font-family: 'Space Mono', $font-family-fallback;
+  background: #2c333d;
+  color: white;
+  font-family: 'Space Mono', $font-family-fallback;
+}
+
+.wrap {
+  @media(min-width: $screen-sm) {
+    min-height: 100vh;
+  }
+}
+
+.caps {
+  letter-spacing: 2pt;
 }

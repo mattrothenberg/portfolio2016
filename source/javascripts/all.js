@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gallery.init();
     };
 
-    openPhotoSwipe();
+    // openPhotoSwipe();
   }
   
 })

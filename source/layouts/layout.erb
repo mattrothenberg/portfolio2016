@@ -8,15 +8,17 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Portfolio of Matt Rothenberg" %></title>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Space+Mono" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Space+Mono:400,700" rel="stylesheet">
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %> p1 sm-p0 wrap sm-flex flex-column">
     <%= partial 'header' %>
-    <%= yield %>
+    <main class="flex-auto">
+      <%= yield %>
+    </main>
     <%= partial 'footer' %>
+    <%= javascript_include_tag :all %>
   </body>
 </html>

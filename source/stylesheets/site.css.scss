@@ -61,6 +61,11 @@ body {
   background: #2c333d;
   color: white;
   font-family: 'Space Mono', $font-family-fallback;
+  font-size: 15px;
+
+  @media(min-width: $screen-sm) {
+    font-size: 17px;
+  }
 }
 
 .wrap {

@@ -7,9 +7,9 @@
         </div>
         <div class="col col-12 sm-col-9">
           <nav>
-            <%= link_to 'About', '/index.html', class: 'inline-block rubik pink text-decoration-none mr1 sm-mr2' %>
-            <%= link_to 'Resume', '/resume.html', class: 'inline-block rubik white muted text-decoration-none mr1 sm-mr2' %>
-            <%= link_to 'Work', '/work.html', class: 'inline-block rubik white muted text-decoration-none' %>
+            <a class="<%= active_class('index.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="index.html">About</a>
+            <a class="<%= active_class('resume.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="resume.html">Resume</a>
+            <a class="<%= active_class('work.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="work.html">Work</a>
           </nav>
         </div>
       </div>

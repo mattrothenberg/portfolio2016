@@ -30,11 +30,11 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def active_class(link_path)
+    current_page.path == link_path ? "active" : ""
+  end
+end
 
 # Build-specific configuration
 configure :build do

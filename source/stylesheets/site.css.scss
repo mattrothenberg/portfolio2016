@@ -26,6 +26,16 @@ a {
   color: $pink;
 }
 
+nav a {
+  @extend .white;
+  @extend .muted;
+
+  &.active {
+    opacity: 1;
+    color: $pink;
+  }
+}
+
 .pink {
   color: $pink;
 }

@@ -3,42 +3,77 @@
 //= require photoswipe-ui.min
 
 document.addEventListener('DOMContentLoaded', function() {
+  var globalPswpOptions = {
+    history: false,
+    focus: false,
+    showAnimationDuration: 0,
+    hideAnimationDuration: 0
+  };
+
+  var images = {
+    autolean: [
+      {src: 'images/visualdesign/autolean-1.jpg', w: 0, h: 0},
+      {src: 'images/visualdesign/autolean-2.jpg', w: 0, h: 0},
+      {src: 'images/visualdesign/autolean-3.jpg', w: 0, h: 0},
+      {src: 'images/visualdesign/autolean-4.jpg', w: 0, h: 0}
+    ],
+    logos: [
+      { src: 'images/visualdesign/logo-1.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-9.png', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-2.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-3.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-4.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-5.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-6.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-7.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/logo-8.jpg', w: 0, h: 0},
+    ],
+    abstract: [
+      { src: 'images/visualdesign/abstract-1.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-2.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-3.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-4.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-5.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-6.jpg', w: 0, h: 0},
+      { src: 'images/visualdesign/abstract-7.jpg', w: 0, h: 0}
+    ],
+  };
+
   if ( document.body.classList.contains('work') ) {
 
+    var galleryLinks = document.querySelectorAll('.gallery-link');
+    for(var i = 0; i < galleryLinks.length; i++) {
+      galleryLinks[i].addEventListener('click', handleGallery)
+    }
 
-    var openPhotoSwipe = function() {
+    function handleGallery(e) {
+      e.preventDefault();
+      var galleryToOpen = e.target.getAttribute('data-gallery');
+
+      openPhotoSwipe(galleryToOpen)
+    }
+
+    var openPhotoSwipe = function(galleryType) {
       var pswpElement = document.querySelectorAll('.pswp')[0];
-
-      var items = [
-        {
-          src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
-          w: 964,
-          h: 1024
-        },
-        {
-          src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-          w: 1024,
-          h: 683
-        }
-      ];
-      
-      // define options (if needed)
-      var options = {
-        history: false,
-        focus: false,
-        showAnimationDuration: 0,
-        hideAnimationDuration: 0
-      };
+      var items = images[ galleryType.toString() ];
   
-      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, globalPswpOptions);
+
       gallery.listen('gettingData', function(index, item) {
-        console.log(item);
+        if (item.w < 1 || item.h < 1) {
+          var img = new Image(); 
+          img.onload = function() {
+            item.w = this.width;
+            item.h = this.height;
+            gallery.invalidateCurrItems();
+            gallery.updateSize(true);
+          }
+          img.src = item.src;
+        }
       });
 
       gallery.init();
     };
-
-    // openPhotoSwipe();
   }
   
 })

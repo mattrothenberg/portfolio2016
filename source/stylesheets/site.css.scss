@@ -18,6 +18,10 @@ $white: #fff;
   opacity: .25;
 }
 
+.border-subdued {
+  border-color: rgba($white, .25);
+}
+
 .medium {
   font-weight: 50;;
 }
@@ -81,4 +85,12 @@ body {
     left: -12px;
     top: 0;
   }
+}
+
+.gallery-link {
+  cursor: pointer;
+}
+
+.pen {
+  pointer-events: none;
 }

@@ -8,30 +8,30 @@ var globalPswpOptions = {
 
 var images = {
   autolean: [
-    {src: 'images/visualdesign/autolean-1.jpg', w: 0, h: 0},
-    {src: 'images/visualdesign/autolean-2.jpg', w: 0, h: 0},
-    {src: 'images/visualdesign/autolean-3.jpg', w: 0, h: 0},
-    {src: 'images/visualdesign/autolean-4.jpg', w: 0, h: 0}
+    {src: '../images/visualdesign/autolean-1.jpg', w: 0, h: 0},
+    {src: '../images/visualdesign/autolean-2.jpg', w: 0, h: 0},
+    {src: '../images/visualdesign/autolean-3.jpg', w: 0, h: 0},
+    {src: '../images/visualdesign/autolean-4.jpg', w: 0, h: 0}
   ],
   logos: [
-    { src: 'images/visualdesign/logo-1.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-9.png', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-2.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-3.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-4.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-5.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-6.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-7.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/logo-8.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-1.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-9.png', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-2.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-3.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-4.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-5.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-6.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-7.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/logo-8.jpg', w: 0, h: 0},
   ],
   abstract: [
-    { src: 'images/visualdesign/abstract-1.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-2.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-3.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-4.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-5.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-6.jpg', w: 0, h: 0},
-    { src: 'images/visualdesign/abstract-7.jpg', w: 0, h: 0}
+    { src: '../images/visualdesign/abstract-1.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-2.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-3.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-4.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-5.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-6.jpg', w: 0, h: 0},
+    { src: '../images/visualdesign/abstract-7.jpg', w: 0, h: 0}
   ],
 };
 

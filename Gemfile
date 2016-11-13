@@ -12,5 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-sprockets'
-gem 'turbolinks', require: false
+gem 'turbolinks', '~> 5.0', '>= 5.0.1', require: false
 gem 'fastimage', require: true

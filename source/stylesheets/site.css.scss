@@ -40,6 +40,11 @@ a {
   color: $pink;
 }
 
+.logo img {
+  height: auto;
+  width: 70px;
+}
+
 .default-link {
   transition: color .2s ease-out;
 

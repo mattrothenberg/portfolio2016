@@ -10,6 +10,14 @@ $screen-md: 52em;
 $pink: #ffa2a2;
 $white: #fff;
 
+::selection {
+  background: $pink;
+}
+
+::-moz-selection {
+  background: $pink;
+}
+
 .rubik {
   font-family: 'Rubik', $font-family-fallback;
 }

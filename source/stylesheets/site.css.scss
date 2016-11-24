@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'normalize';
 @import 'pswp';
+@import 'typography';
 
 $font-family-fallback: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $screen-sm: 40em;
@@ -30,8 +31,9 @@ $white: #fff;
   border-color: rgba($white, .25);
 }
 
-.medium {
-  font-weight: 50;;
+.medium,
+.bold {
+  font-weight: 500;
 }
 
 h1,
@@ -65,7 +67,7 @@ nav a {
   color: $white;
   opacity: .5;
   transition: color .2s ease-out, opacity .2s ease-out;
-  
+
   &:hover,
   &.active {
     opacity: 1;
@@ -85,8 +87,8 @@ body {
   @include smooth-type;
   background: #2c333d;
   color: white;
-  font-family: 'Space Mono', $font-family-fallback;
-  font-size: 15px;
+  font-family: 'akrt', $font-family-fallback;
+  font-size: 16px;
 
   @media(min-width: $screen-sm) {
     font-size: 17px;

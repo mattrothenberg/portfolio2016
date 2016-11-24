@@ -12,6 +12,8 @@ page '/*.txt', layout: false
 activate :sprockets
 activate :directory_indexes
 
+set :fonts_dir, 'fonts/'
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 

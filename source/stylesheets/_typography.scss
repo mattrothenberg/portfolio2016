@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Rubik-Regular.eot?') format('eot'),
+       url('../fonts/Rubik-Regular.woff') format('woff'),
+       url('../fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Rubik-Medium.eot?') format('eot'),
+       url('../fonts/Rubik-Medium.woff') format('woff'),
+       url('../fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'akrt';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/akrt-mono.eot?') format('eot'),
+       url('../fonts/akrt-mono.woff') format('woff'),
+       url('../fonts/akrt-mono.ttf') format('truetype'),
+       url("../fonts/akrt-mono.svg#akrt") format("svg");
+}

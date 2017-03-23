@@ -33,6 +33,12 @@ var images = {
     { src: '../images/visualdesign/abstract-6.jpg', w: 0, h: 0},
     { src: '../images/visualdesign/abstract-7.jpg', w: 0, h: 0}
   ],
+  animation: [
+    { src: '../images/animation/pin.gif', w: 0, h: 0, title: '<a href="http://codepen.io/mattrothenberg/pen/xqdyWG" target="_blank">http://codepen.io/mattrothenberg/pen/xqdyWG</a>'},
+    { src: '../images/animation/eclipse.gif', w: 0, h: 0, title: '<a href="http://codepen.io/mattrothenberg/pen/ZeKgqx" target="_blank">http://codepen.io/mattrothenberg/pen/ZeKgqx</a>'},
+    { src: '../images/animation/gold.gif', w: 0, h: 0, title: '<a href="http://codepen.io/mattrothenberg/pen/MpwwpL" target="_blank">http://codepen.io/mattrothenberg/pen/MpwwpL</a>'},
+    { src: '../images/animation/heart.gif', w: 0, h: 0, title: '<a href="http://codepen.io/mattrothenberg/pen/RpVjye" target="_blank">http://codepen.io/mattrothenberg/pen/RpVjye</a>'}
+  ]
 };
 
 

@@ -20,6 +20,7 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "critical": "0.8.0",
     "gulp-shell": "^0.6.3",
     "gulp-uncss": "^1.0.6"
   }

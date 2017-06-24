@@ -8,7 +8,7 @@
     <meta property="og:title" content="Matt Rothenberg | Full Stack Designer">
     <meta property="og:url" content="http://www.mattrothenberg.com">
     <meta property="og:image" content="https://pbs.twimg.com/profile_images/486132305069477891/aUnjJ9LM.jpeg">
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Matt Rothenberg" %></title>
@@ -22,7 +22,6 @@
       <%= yield %>
     </main>
     <%= partial 'footer' %>
-    <%= javascript_include_tag :all %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

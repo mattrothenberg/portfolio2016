@@ -1,3 +1,6 @@
+//= require photoswipe.min
+//= require photoswipe-ui.min
+
 var globalPswpOptions = {
   history: false,
   closeOnScroll: false,
@@ -49,7 +52,6 @@ for(var i = 0; i < galleryLinks.length; i++) {
 
 function handleGallery(e) {
   e.preventDefault();
-  console.log(e)
   var galleryToOpen = e.target.getAttribute('data-gallery');
 
   openPhotoSwipe(galleryToOpen)

@@ -49,6 +49,7 @@ for(var i = 0; i < galleryLinks.length; i++) {
 
 function handleGallery(e) {
   e.preventDefault();
+  console.log(e)
   var galleryToOpen = e.target.getAttribute('data-gallery');
 
   openPhotoSwipe(galleryToOpen)
@@ -59,10 +60,10 @@ function openPhotoSwipe(galleryType) {
   var items = images[ galleryType.toString() ];
 
   var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, globalPswpOptions);
-  
+
   gallery.listen('gettingData', function(index, item) {
     if (item.w < 1 || item.h < 1) {
-      var img = new Image(); 
+      var img = new Image();
       img.onload = function() {
         item.w = this.width;
         item.h = this.height;

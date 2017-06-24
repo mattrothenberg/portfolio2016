@@ -1,20 +1,15 @@
-<header class="py3">
-  <div class="px2">
-    <div class="max-width-4 mx-auto">
-      <div class="clearfix sm-flex items-center">
-        <div class="col col-12 sm-col-3">
-          <h1 class="h3 m0">
-            Matt Rothenberg
-          </h1>
-        </div>
-        <div class="col col-12 sm-col-9">
-          <nav class="pt1 sm-pt0">
-            <a class="<%= active_class('index.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="/">About</a>
-            <a class="<%= active_class('resume.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="/resume">Resume</a>
-            <a class="<%= active_class('work.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="/work">Work</a>
-            <a class="<%= active_class('writing.html') %> inline-block rubik text-decoration-none mr1 sm-mr2" href="/writing">Writing</a>
-          </nav>
-        </div>
+<header>
+  <div class="pa3 pv4">
+    <div class="mw8 center">
+      <div class="flex-l justify-between">
+        <figure class="logo w3 ma0">
+          <a href="/" class="dim"><%= partial 'images/m-logo.svg' %></a>
+        </figure>
+        <nav class="flex f5 f4-l">
+          <a class="<%= active_class('resume.html') %> white dim no-underline mr3 mr0-l pa3-l db" href="/resume">Resume</a>
+          <a class="<%= active_class('work.html') %> white dim no-underline mr3 mr0-l pa3-l db" href="/work">Work</a>
+          <a class="<%= active_class('writing.html') %> white dim no-underline mr3 mr0-l pa3-l db" href="/writing">Writing</a>
+        </nav>
       </div>
     </div>
   </div>

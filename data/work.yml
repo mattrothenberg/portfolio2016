@@ -1,0 +1,50 @@
+---
+work:
+  product:
+    - name: Runway App
+      url: "https://runwayapp.io/"
+      desc: "Go from stylesheet to styleguide, instantly. Runway offers a web UI where Designers can build and deploy beautiful styleguides"
+    - name: 2by2
+      url: "//2by2.io/"
+      desc: "Collaborate, build and share two by two's (a.k.a, Eisenhower Matrices) in real-time"
+    - name: "Codepen"
+      url: "http://codepen.io/mattrothenberg/"
+      desc: "An assortment of various UI elements, interaction design treatments and concepts"
+    - name: "Turds With Friends"
+      url: "http://www.turdswfriends.com/"
+      desc: "A mobile web game designed to destigmatize pooping, one cute poop emoji at a time"
+  oss:
+    - name: Prototyping Playbook
+      url: "https://mattrothenberg.github.io/prototyping-playbook/"
+      desc: "A blog of short tutorials (“plays”) that help designers use the browser for their design and prototyping needs"
+    - name: Acme Styleguide
+      url: "http://acme-styleguide.cfapps.io/"
+      desc: "A front-end styleguide boilerplate, designed to help Designers express their decisions through the language of HTML/Sass. Powered by Hologram"
+    - name: Valchemy
+      url: "https://github.com/davwards/valchemy"
+      desc: "Presentation and framework agnostic validation engine in Javascript, designed to demonstrate functional programming concepts through real-world use cases"
+  frontend:
+    - name: GORUCO 2017
+      url: "http://goruco.com/"
+      desc: GORUCO is a one day, single track conference in New York City
+    - name: Steeltoe.io
+      url: "http://steeltoe.io/"
+      desc: "A set of tools that bring the power of scalable microservices to .NET developers"
+    - name: x.ai
+      url: "//x.ai"
+      desc: "A company that builds and maintains an artificial intelligence powered personal assistant"
+    - name: RubiconMD
+      url: "//rubiconmd.com"
+      desc: "An eConsults platform that connects providers to top specialists"
+    - name: Baxt Ingui
+      url: "//baxtingui.com"
+      desc: "A general-practice architectural and design firm in New York City with experience in residential and commercial renovation projects"
+    - name: SilviaTerra
+      url: "//silviaterra.com"
+      desc: "A team of foresters, biometricians, and programmers dedicated to expanding our understanding of forests"
+    - name: Sabin Landscape Architects
+      url: "http://dirksabindesign.com/"
+      desc: "A firm that contributes toward the development of sustainable landscapes in Residential and Commercial settings"
+    - name: DevProgress
+      url: "//devprogress.us"
+      desc: "A community of technology volunteers who want to make sure that progressive candidates are on the winning side of elections"

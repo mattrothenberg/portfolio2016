@@ -1,5 +1,5 @@
 //= require photoswipe.min
-//= require photoswipe-ui.min
+//= require photoswipe-ui-default.min
 
 var globalPswpOptions = {
   history: false,

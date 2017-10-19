@@ -16,7 +16,7 @@ body {
 
 body {
   @include smooth-type;
-  background: #0e0e0e;
+  background:#1c1e2e;
   font-family: 'gta', $font-family-fallback;
 }
 
@@ -60,6 +60,11 @@ hr {
   font-family: 'gta', $font-family-fallback;
 }
 
+.yellow {
+  color: #ffdd35;
+}
+
 .active {
-  color: gold;
+  color: #ffdd35;
+  font-weight: 500;
 }

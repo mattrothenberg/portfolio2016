@@ -19,10 +19,10 @@ work:
       desc: "A blog of short tutorials (“plays”) that help designers use the browser for their design and prototyping needs"
     - name: Acme Styleguide
       url: "http://acme-styleguide.cfapps.io/"
-      desc: "A front-end styleguide boilerplate, designed to help Designers express their decisions through the language of HTML/Sass. Powered by Hologram"
-    - name: Valchemy
-      url: "https://github.com/davwards/valchemy"
-      desc: "Presentation and framework agnostic validation engine in Javascript, designed to demonstrate functional programming concepts through real-world use cases"
+      desc: "A front-end styleguide boilerplate, designed to help Designers express their decisions through the language of HTML/Sass"
+    - name: "Vue Elucidate"
+      url: "https://github.com/mattrothenberg/vue-elucidate"
+      desc: "A Vue library that makes it a breeze to 'shed light' on your Vue components and build design systems"
   frontend:
     - name: GORUCO 2017
       url: "http://goruco.com/"

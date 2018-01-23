@@ -3,7 +3,7 @@ const uncss      = require('gulp-uncss'); // removes unused css
 const csso       = require('gulp-csso'); // minify css
 const gzip       = require('gulp-gzip'); // gzip compression
 const critical   = require('critical'); // gzip compression
-const imagemin = require('gulp-imagemin');
+const imagemin   = require('gulp-imagemin');
 
 gulp.task('critical', function(cb) {
   return critical.generate({
@@ -22,7 +22,18 @@ gulp.task('uncss', ['critical'], function() {
   return gulp.src('build/stylesheets/**/*.css')
     .pipe(uncss({
         html: ['build/**/*.html'],
-        ignore: [/active/]
+        ignore: [
+          /pswp/,
+          /pswp-supports-fs/,
+          /pswp-open/,
+          /pswp-notouch/,
+          /pswp-css_animation/,
+          /pswp-svg/,
+          /pswp-animated-in/,
+          /pswp-visible/,
+          /pswp-has_mouse/,
+          /pswp-zoom-allowed/
+        ]
     }))
     .pipe(csso())
     .pipe(gulp.dest('./build/stylesheets'))

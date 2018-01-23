@@ -1,5 +1,5 @@
 {
-  "name": "partandsum",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,5 +20,6 @@
     "gulp-gzip": "",
     "gulp-imagemin": "^4.1.0",
     "gulp-uncss": ""
-  }
+  },
+  "dependencies": {}
 }

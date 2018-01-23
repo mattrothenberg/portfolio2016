@@ -1,27 +1,24 @@
 {
-  "name": "matt-portfolio",
+  "name": "partandsum",
   "version": "1.0.0",
-  "description": "Matt's portfolio",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattrothenberg/portfolio2016.git"
+    "url": "git+ssh://git@bitbucket.org/mattrothenberg/partandsum.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mattrothenberg/portfolio2016/issues"
-  },
-  "homepage": "https://github.com/mattrothenberg/portfolio2016#readme",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "homepage": "https://bitbucket.org/mattrothenberg/partandsum#readme",
   "devDependencies": {
     "critical": "0.8.0",
-    "gulp-shell": "^0.6.3",
-    "gulp-uncss": "^1.0.6"
+    "gulp": "",
+    "gulp-csso": "",
+    "gulp-gzip": "",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uncss": ""
   }
 }

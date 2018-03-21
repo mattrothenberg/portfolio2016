@@ -10,9 +10,6 @@ work:
     - name: "Codepen"
       url: "http://codepen.io/mattrothenberg/"
       desc: "An assortment of various UI elements, interaction design treatments and concepts"
-    - name: "Turds With Friends"
-      url: "http://www.turdswfriends.com/"
-      desc: "A mobile web game designed to destigmatize pooping, one cute poop emoji at a time"
   oss:
     - name: Prototyping Playbook
       url: "https://mattrothenberg.github.io/prototyping-playbook/"
@@ -23,9 +20,18 @@ work:
     - name: "Vue Elucidate"
       url: "https://github.com/mattrothenberg/vue-elucidate"
       desc: "A Vue library that makes it a breeze to 'shed light' on your Vue components and build design systems"
+    - name: "Vue Overdrive"
+      url: "https://github.com/mattrothenberg/vue-overdrive"
+      desc: "Super easy magic-move transitions for Vue apps, inspired by React Overdrive"
+    - name: "Vue Overdrive"
+      url: "https://github.com/mattrothenberg/vue-storybook"
+      desc: "Custom <story> blocks for Vue single file components"
   frontend:
+    - name: Part And Sum
+      url: "https://partandsum.com/"
+      desc: Part and Sum is a modern marketing agency in New York City
     - name: GORUCO 2017
-      url: "http://goruco.com/"
+      url: "http://2017.goruco.com/"
       desc: GORUCO is a one day, single track conference in New York City
     - name: Steeltoe.io
       url: "http://steeltoe.io/"

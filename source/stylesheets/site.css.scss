@@ -68,3 +68,11 @@ hr {
   color: #ffdd35;
   font-weight: 500;
 }
+
+header nav a {
+  transition: opacity .2s ease-out,
+              color .2s ease-out;
+  &:hover {
+    opacity: .5;
+  }
+}

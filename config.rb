@@ -42,5 +42,5 @@ end
 # Build-specific configuration
 configure :build do
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 end

@@ -27,6 +27,9 @@ work:
       url: "https://github.com/mattrothenberg/vue-storybook"
       desc: "Custom <story> blocks for Vue single file components"
   frontend:
+    - name: Canoe CS
+      url: "https://canoecs.com/"
+      desc: Customer support for eCommerce brands
     - name: Part And Sum
       url: "https://partandsum.com/"
       desc: Part and Sum is a modern marketing agency in New York City

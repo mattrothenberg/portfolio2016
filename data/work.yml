@@ -23,7 +23,7 @@ work:
     - name: "Vue Overdrive"
       url: "https://github.com/mattrothenberg/vue-overdrive"
       desc: "Super easy magic-move transitions for Vue apps, inspired by React Overdrive"
-    - name: "Vue Overdrive"
+    - name: "Vue Storybook"
       url: "https://github.com/mattrothenberg/vue-storybook"
       desc: "Custom <story> blocks for Vue single file components"
   frontend:
